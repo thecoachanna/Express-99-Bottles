@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= number %> Bottles of Beer on the Wall
+  </title>
+</head>
+
+<body>
+  <h1>
+    <%= number %> bottles of beer on the wall
+  </h1>
+  <% if(number> 0) { %>
+    <a href="/<%= number-1 %>">take one down, pass it around</a>
+    <% } else { %>
+      <a href="/">Start over</a>
+      <% } %>
+</body>
+
+</html>
